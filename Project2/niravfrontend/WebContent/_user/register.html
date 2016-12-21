@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form>
+<table>
+<tr><td>Username</td><td><input type="text" ng-model="user.username"></td></tr>
+<tr><td>password</td><td><input type="password" ng-model="user.password"></td></tr>
+<tr><td>email</td><td><input type="text" ng-model="user.email"></td></tr>
+
+
+
+<tr><td>Select role</td><td>
+<input type="radio" ng-model="user.role" value="STUDENT">Student
+<input type="radio" ng-model="user.role" value="ALUMNI">Alumni
+<input type="radio" ng-model="user.role" value="EMPLOYEE">Employee</td>
+</tr>
+
+<tr><td><input type="submit" ng-click="registerUser()" value="Register"></td></tr>
+
+
+</table>
+
+</form>
+{{errorMessage}}
+</body>
+</html>
